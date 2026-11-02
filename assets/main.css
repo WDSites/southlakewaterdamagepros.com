@@ -287,3 +287,18 @@ main a,.site-footer a,.site-footer address,.contact-card p,.legal p{overflow-wra
 .post-img{width:calc(100% + 48px);margin:-24px -24px 14px;height:180px}
 .inline-fig{margin:24px 0}
 .inline-fig img{display:block;width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line)}
+
+.svc-groups{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:22px}
+.svc-group{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.svc-group h3{margin-bottom:2px}
+.svc-sub{font-size:14px;color:var(--muted);margin-bottom:12px}
+.svc-list{list-style:none;margin:0;padding:0}
+.svc-list li{padding:10px 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.svc-list li:first-child{border-top:0}
+.svc-list a{font-weight:700;color:var(--ink);text-decoration:none}
+.svc-list a:hover{color:var(--coral-hover)}
+.svc-list span{font-size:14px;color:var(--muted)}
+@media(max-width:1200px){.svc-groups{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.svc-groups{grid-template-columns:1fr}}
+
+.svc-compact li{padding:7px 0;flex-direction:row}
